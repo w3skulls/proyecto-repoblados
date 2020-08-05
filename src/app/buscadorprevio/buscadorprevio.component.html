@@ -1,0 +1,33 @@
+<div class="container container-buscador-previo">
+    <div class="descripcion">
+        <h3>Busca ofertas en hoteles, casas rurales, actividades e inversiones</h3>
+        <p>Casas acogedoras, modernos apartamentos, todo tipo de actividades e inversiones.</p>
+    </div>
+
+    <div class="buscador">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <select class="form-control" id="tipoActividad" [value]="tipoActividadValue">
+                        <option value="" selected disabled>Selecciona actividad</option>
+                        <option *ngFor="let item of tipoActividad" [value]="item">{{ item.nombre | titlecase}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputCheckIn" placeholder="CheckIn">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputCheckOut" placeholder="CheckOut">
+                </div>
+            </div>
+            <div class="col-sm">
+                <button id="btnBuscar" type="button" class="btn btn-primary" [routerLink]="['/buscador/turismo']" >Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>

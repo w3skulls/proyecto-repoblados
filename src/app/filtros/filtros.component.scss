@@ -1,0 +1,16 @@
+/* Contenedor de filtros*/
+.container-filtros{
+    margin-top: 0.8rem;
+    border: 1px solid #424242;
+    padding:0.75rem;
+}
+.vermas{font-size: 0.8rem;}
+.custom-control-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+label{font-size: 0.8rem;padding-top:0.1rem;}
+.title-filtro{margin-bottom: 0.3rem;}
+.cantidad{font-size: 0.8rem; color: #7c7c7c; position: relative; bottom:.2rem;}
+.col-10{padding: 0px;}
